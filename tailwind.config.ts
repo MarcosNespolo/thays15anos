@@ -18,6 +18,7 @@ const config: Config = {
       },
       fontFamily: {
         'great-vibes': ['var(--font-great-vibes)', 'cursive'],
+        'old-standard': ['var(--font-old-standard)', 'serif'],
       },
     },
   },

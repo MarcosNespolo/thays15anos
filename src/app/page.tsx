@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { Great_Vibes, Old_Standard_TT } from 'next/font/google';
+import Card from './card';
 
 const greatVibes = Great_Vibes({
   subsets: ['latin'],
@@ -19,18 +20,23 @@ const oldStandard = Old_Standard_TT({
 })
 
 export default function AnimatedBlocks() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
+  const [showGifts, setShowGifts] = useState(false)
 
   const handleEnvelopeClick = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
+
+  const handleShowGiftsClick = () => {
+    setShowGifts(!showGifts)
+  }
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
     {/* Imagem do Envelope */}
     <div
       className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer z-50 transition-opacity duration-1000 ${
-       isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
+       (isOpen) ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
       onClick={handleEnvelopeClick}
     >
@@ -46,8 +52,8 @@ export default function AnimatedBlocks() {
       {/* Detalhes do convite */}
       <div
         className={`
-          transition-opacity duration-[2000ms]
-          ${!isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}
+          transition-opacity ${showGifts ? 'duration-[500ms]' : 'duration-[2000ms]'}
+          ${!isOpen || showGifts ? 'opacity-0 pointer-events-none' : 'opacity-100'}
           absolute z-40 mt-12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
         `}
       >
@@ -72,7 +78,7 @@ export default function AnimatedBlocks() {
             15 anos
           </div>
         </div>
-        <div className={`${oldStandard.variable} text-[#8A7CCB] font-old-standard flex flex-col items-center mt-12 text-[36px]`}>
+        <div className={`${oldStandard.variable} font-old-standard text-[#8A7CCB] flex flex-col items-center mt-12 text-[36px]`}>
           <div className='flex flex-row gap-8 items-center'>
             <div className={`border-y-2 pt-2 pb-0.5`}>
               SÁB
@@ -92,20 +98,71 @@ export default function AnimatedBlocks() {
           <a 
             target='_blank'
             href='https://api.whatsapp.com/send?phone=5541997597912&text=Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20seu%20anivers%C3%A1rio%20de%2015%20anos%21'
-            className='text-center cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-110 active:brightness-95 border p-4 rounded-full border-1 border-[#8A7CCB] text-[#736A9B] font-semibold bg-white'>
+            className='text-center cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 border p-3 rounded-full border-1 border-[#8A7CCB] text-[#736A9B] font-semibold bg-white'>
                 Confirmar presença
           </a>
           <a 
-            onClick={() => {}}
-            className='text-center cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-110 active:brightness-95 border p-4 rounded-full border-1 border-[#8A7CCB] text-[#736A9B] font-semibold bg-white'>
+            onClick={() => handleShowGiftsClick()}
+            className='text-center cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 border p-3 rounded-full border-1 border-[#8A7CCB] text-[#736A9B] font-semibold bg-white'>
                 Presentear
           </a>
           <a 
             target='_blank'
             href='https://www.google.com/maps/place/Av.+Mal.+Floriano+Peixoto,+4845+-+Hauer,+Curitiba+-+PR,+81610-000/@-25.4708667,-49.2547532,17z/data=!3m1!4b1!4m6!3m5!1s0x94dce4dae185505d:0x3c26a75bc53e226f!8m2!3d-25.4708716!4d-49.2521729!16s%2Fg%2F11f3nh9tp7?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D'
-            className='text-center cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-110 active:brightness-95 border p-4 rounded-full border-1 border-[#8A7CCB] text-[#736A9B] font-semibold bg-white'>
+            className='text-center cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 border p-3 rounded-full border-1 border-[#8A7CCB] text-[#736A9B] font-semibold bg-white'>
                 Como chegar
           </a>
+        </div>
+      </div>
+
+      {/* Presentes */}
+      <div
+        className={`
+          flex flex-col gap-12
+          transition-opacity duration-[500ms]
+          ${!showGifts ? 'opacity-0 pointer-events-none' : 'opacity-100'}
+          absolute z-40 mt-12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+        `}
+      >
+          <div className='flex flex-row gap-12'>
+            <Card
+              title='Salgadinho Cheetos requeijão'
+              description='R$ 50,00'
+              image='/salgadinho.png'
+              link='https://nubank.com.br/cobrar/yn3w9/6738efb3-d100-4f9b-b745-4ae5fe514dc2'
+            />
+            <Card
+              title='Pizza de frango com catupiry'
+              description='R$ 90,00'
+              image='/pizza.png'
+              link='https://nubank.com.br/cobrar/yn3w9/6738effd-1b5a-40ca-89c5-b383fc2cf707'
+            />
+            <Card
+              title='Body Splash We Pink'
+              description='R$ 150,00'
+              image='/body_splash.png'
+              link='https://nubank.com.br/cobrar/yn3w9/6738f022-4141-4512-95e1-572992ef7adf'
+            />
+          </div>
+        <div className='flex flex-row gap-12'>
+          <Card
+            title='Kit Glossliciuous Franciny Ehlke'
+            description='R$ 250,00'
+            image='/kit.png'
+            link='https://nubank.com.br/cobrar/yn3w9/6738f062-ac1a-44ad-b359-97eb2e18e62e'
+          />
+          <Card
+            title='Vestido de prenda gaúcha'
+            description='R$ 500,00'
+            image='/vestido.png'
+            link='https://nubank.com.br/cobrar/yn3w9/6738f086-b431-47db-967b-5dca38a4e3d8'
+          />
+          <Card
+            title='Pulseira de Prata Pandora'
+            description='R$ 900,00'
+            image='/pulseira.png'
+            link='https://nubank.com.br/cobrar/yn3w9/6738f0b0-3612-4a38-8d7e-1bd89e47e718'
+          />
         </div>
       </div>
 

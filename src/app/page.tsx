@@ -120,13 +120,13 @@ export default function AnimatedBlocks() {
       {/* Presentes */}
       <div
         className={`
-          flex flex-col gap-12
+          flex flex-row xl:flex-col gap-4 sm:gap-12
           transition-opacity duration-[500ms]
           ${!showGifts ? 'opacity-0 pointer-events-none' : 'opacity-100'}
-          absolute z-40 mt-12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+          absolute z-40 sm:mt-12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
         `}
       >
-          <div className='flex flex-row gap-12'>
+          <div className='flex flex-col xl:flex-row gap-4 sm:gap-12'>
             <Card
               title='Salgadinho Cheetos requeijão'
               description='R$ 50,00'
@@ -146,7 +146,7 @@ export default function AnimatedBlocks() {
               link='https://nubank.com.br/cobrar/yn3w9/6738f022-4141-4512-95e1-572992ef7adf'
             />
           </div>
-        <div className='flex flex-row gap-12'>
+        <div className='flex flex-col xl:flex-row gap-4 sm:gap-12'>
           <Card
             title='Kit Glossliciuous Franciny Ehlke'
             description='R$ 250,00'

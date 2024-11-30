@@ -57,8 +57,8 @@ export default function AnimatedBlocks() {
           absolute z-40 mt-12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
         `}
       >
-        <div className="relative ml-3">
-          <div className="absolute w-[32px] h-[32px] sm:w-[66px] sm:h-[66px] top-1 -right-7 sm:top-2 sm:-right-12">
+        <div className="relative min-w-[280px] ml-3">
+          <div className="absolute w-[32px] h-[32px] sm:w-[66px] sm:h-[66px] top-1 right-8 sm:top-2 sm:-right-12">
             <Image
               src="/borboleta.png"
               alt="Borboleta"
@@ -67,34 +67,36 @@ export default function AnimatedBlocks() {
               objectFit="contain"
             />
           </div>
-          <div className={`${greatVibes.variable} font-great-vibes text-[64px] sm:text-[124px] text-[#736A9B] text-shadow-xl`}>
+          <div className={`${greatVibes.variable} font-great-vibes text-[64px] sm:text-[124px] text-center text-[#736A9B] text-shadow-xl`}>
             Thays
           </div>
           <div 
             className={`
               ${greatVibes.variable} font-great-vibes text-[32px] sm:text-[64px] text-[#8A7CCB]
-              absolute -bottom-6 -left-12  
+              absolute 
+              left-6 sm:-left-12 
+              -bottom-4 sm:-bottom-6
             `}>
             15 anos
           </div>
         </div>
-        <div className={`${oldStandard.variable} font-old-standard text-[#8A7CCB] flex flex-col items-center mt-12 text-[36px]`}>
-          <div className='flex flex-row gap-8 items-center'>
+        <div className={`${oldStandard.variable} font-old-standard text-[#8A7CCB] flex flex-col items-center mt-12 text-[22px] sm:text-[36px]`}>
+          <div className='flex flex-row gap-4 sm:gap-8 items-center'>
             <div className={`border-y-2 pt-2 pb-0.5`}>
               SÁB
             </div>
-            <div className={`text-[82px] pt-3`}>
+            <div className={`text-[46px] sm:text-[82px] pt-3`}>
               11
             </div>
-            <div className={`border-y-2 pt-1 -pb-0.5 text-[40px]`}>
+            <div className={`border-y-2 pt-1 -pb-0.5 text-[24px] sm:text-[40px]`}>
               19h
             </div>
           </div>
-          <div className={`pl-2 -mt-4`}>
+          <div className={`pl-2 -mt-2 sm:-mt-4`}>
             JANEIRO
           </div>
         </div>
-        <div className='flex flex-col gap-2 mt-24'>
+        <div className='flex flex-col gap-2 mt-12 sm:mt-24 text-sm sm:text-base'>
           <a 
             target='_blank'
             href='https://api.whatsapp.com/send?phone=5541997597912&text=Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20seu%20anivers%C3%A1rio%20de%2015%20anos%21'
@@ -129,7 +131,7 @@ export default function AnimatedBlocks() {
               title='Salgadinho Cheetos requeijão'
               description='R$ 50,00'
               image='/salgadinho.png'
-              link='https://nubank.com.br/cobrar/yn3w9/6738efb3-d100-4f9b-b745-4ae5fe514dc2'
+              link='https://nubank.com.br/cobrar/yn3w9/6739e4a4-3cc6-48e3-9256-53045a0e9251'
             />
             <Card
               title='Pizza de frango com catupiry'
@@ -155,7 +157,7 @@ export default function AnimatedBlocks() {
             title='Vestido de prenda gaúcha'
             description='R$ 500,00'
             image='/vestido.png'
-            link='https://nubank.com.br/cobrar/yn3w9/6738f086-b431-47db-967b-5dca38a4e3d8'
+            link='https://nubank.com.br/cobrar/yn3w9/6739e4d0-4022-41cc-bb67-cbbef4ba30c8'
           />
           <Card
             title='Pulseira de Prata Pandora'
@@ -179,7 +181,7 @@ export default function AnimatedBlocks() {
         {/* Conteúdo do Bloco 1 */}
         <div className="relative">
           <div className="absolute z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-            <div className="relative w-[600px] h-[600px]">
+            <div className="relative w-[300px] h-[300px] sm:w-[600px] sm:h-[600px]">
               <Image
                 src="/flores.png"
                 alt="Flores 1"
@@ -191,7 +193,7 @@ export default function AnimatedBlocks() {
           </div>
           {/* Imagens de Fundo */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[102deg]">
-            <div className="relative w-[800px] h-[800px]">
+            <div className="relative w-[400px] h-[400px] sm:w-[800px] sm:h-[800px]">
               <Image
                 src="/fundo.png"
                 alt="Fundo 1"
@@ -202,7 +204,7 @@ export default function AnimatedBlocks() {
           </div>
           {/* Segunda Imagem de Fundo */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[102deg]">
-            <div className="relative w-[800px] h-[800px]">
+            <div className="relative w-[400px] h-[400px] sm:w-[800px] sm:h-[800px]">
               <Image
                 src="/fundo.png"
                 alt="Fundo 2"
@@ -226,8 +228,8 @@ export default function AnimatedBlocks() {
       >
         {/* Conteúdo do Bloco 2 */}
         <div className="relative">
-          <div className="absolute z-20  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="relative w-[600px] h-[600px]">
+          <div className="absolute z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="relative w-[300px] h-[300px] sm:w-[600px] sm:h-[600px]">
               <Image
                 src="/flores.png"
                 alt="Flores 2"
@@ -239,7 +241,7 @@ export default function AnimatedBlocks() {
           </div>
           {/* Imagens de Fundo */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[102deg]">
-            <div className="relative w-[800px] h-[800px]">
+            <div className="relative w-[400px] h-[400px] sm:w-[800px] sm:h-[800px]">
               <Image
                 src="/fundo.png"
                 alt="Fundo 1"
@@ -250,7 +252,7 @@ export default function AnimatedBlocks() {
           </div>
           {/* Segunda Imagem de Fundo */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[102deg]">
-            <div className="relative w-[800px] h-[800px]">
+            <div className="relative w-[400px] h-[400px] sm:w-[800px] sm:h-[800px]">
               <Image
                 src="/fundo.png"
                 alt="Fundo 2"

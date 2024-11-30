@@ -96,7 +96,7 @@ export default function AnimatedBlocks() {
             JANEIRO
           </div>
         </div>
-        <div className='flex flex-col gap-2 mt-12 sm:mt-24 text-sm sm:text-base'>
+        <div className='flex flex-col gap-2 mt-14 sm:mt-24 text-sm sm:text-base'>
           <a 
             target='_blank'
             href='https://api.whatsapp.com/send?phone=5541997597912&text=Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20seu%20anivers%C3%A1rio%20de%2015%20anos%21'
@@ -173,7 +173,7 @@ export default function AnimatedBlocks() {
         className="absolute transition-all duration-1000"
         style={{
           top: isOpen ? '10%' : '40%',
-          left: isOpen ? '10%' : '40%',
+          left: isOpen ? '5%' : '35%',
           transform: isOpen ? 'translate(0, 0)' : 'translate(-50%, -50%)',
           transitionProperty: 'top, left, transform',
         }}
@@ -192,7 +192,7 @@ export default function AnimatedBlocks() {
             </div>
           </div>
           {/* Imagens de Fundo */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[102deg]">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/3 rotate-[23deg]">
             <div className="relative w-[400px] h-[400px] sm:w-[800px] sm:h-[800px]">
               <Image
                 src="/fundo.png"
@@ -203,7 +203,7 @@ export default function AnimatedBlocks() {
             </div>
           </div>
           {/* Segunda Imagem de Fundo */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[102deg]">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-2/3 rotate-[5deg]">
             <div className="relative w-[400px] h-[400px] sm:w-[800px] sm:h-[800px]">
               <Image
                 src="/fundo.png"
@@ -221,7 +221,7 @@ export default function AnimatedBlocks() {
         className="absolute transition-all duration-1000"
         style={{
           top: isOpen ? '90%' : '60%',
-          left: isOpen ? '90%' : '60%',
+          left: isOpen ? '90%' : '65%',
           transform: isOpen ? 'translate(0, 0)' : 'translate(-50%, -50%)',
           transitionProperty: 'top, left, transform',
         }}

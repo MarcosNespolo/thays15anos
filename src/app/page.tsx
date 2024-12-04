@@ -54,7 +54,7 @@ export default function AnimatedBlocks() {
         className={`
           transition-opacity ${showGifts ? 'duration-[500ms]' : 'duration-[2000ms]'}
           ${!isOpen || showGifts ? 'opacity-0 pointer-events-none' : 'opacity-100'}
-          absolute z-40 mt-12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+          absolute z-40 sm:mt-12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
         `}
       >
         <div className="relative min-w-[280px] ml-3">

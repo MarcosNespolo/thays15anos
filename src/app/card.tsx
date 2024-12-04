@@ -33,7 +33,7 @@ export default function Card({
                     </p>
                 </div>
                 <a
-                    className="bg-[#B268E8] text-white w-full p-1 text-center block rounded-md drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 text-[12px] sm:text-[16px]"
+                    className="bg-[#8A7CCB] text-white w-full p-1 text-center block rounded-md drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 text-[12px] sm:text-[16px]"
                     target="_blank"
                     href={link}  
                 >

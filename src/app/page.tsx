@@ -100,7 +100,7 @@ export default function AnimatedBlocks() {
           <a 
             target='_blank'
             href='https://api.whatsapp.com/send?phone=5541997597912&text=Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20seu%20anivers%C3%A1rio%20de%2015%20anos%21'
-            className='flex items-center justify-start px-6 py-3 max-w-[220px] w-[220px] sm:max-w-[240px] sm:w-[240px] cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 border border-[#8A7CCB] rounded-xl bg-[#8A7CCB] text-white font-semibold bg-white'>
+            className='flex items-center justify-start px-6 py-3 max-w-[220px] w-[220px] sm:max-w-[240px] sm:w-[240px] cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 border border-[#8A7CCB] rounded-xl bg-[#8A7CCB] text-white font-semibold'>
               <img className='mr-5 w-[20px]' src='/wpp.svg'></img>  
                 Confirmar presença
           </a>

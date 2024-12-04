@@ -126,24 +126,24 @@ export default function AnimatedBlocks() {
           flex flex-row xl:flex-col gap-4 sm:gap-12
           transition-opacity duration-[500ms]
           ${!showGifts ? 'opacity-0 pointer-events-none' : 'opacity-100'}
-          absolute z-40 sm:mt-12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+          absolute z-40 -mt-10 sm:mt-12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
         `}
       >
           <div className='flex flex-col xl:flex-row gap-4 sm:gap-12'>
             <Card
-              title='Salgadinho Cheetos requeijão'
+              title='Salgadinho Cheetos'
               description='R$ 50,00'
               image='/salgadinho.png'
               link='https://nubank.com.br/cobrar/yn3w9/6739e4a4-3cc6-48e3-9256-53045a0e9251'
             />
             <Card
-              title='Pizza de frango com catupiry'
+              title='Pizza de frango'
               description='R$ 90,00'
               image='/pizza.png'
               link='https://nubank.com.br/cobrar/yn3w9/6738effd-1b5a-40ca-89c5-b383fc2cf707'
             />
             <Card
-              title='Body Splash We Pink'
+              title='Body Splash'
               description='R$ 150,00'
               image='/body_splash.png'
               link='https://nubank.com.br/cobrar/yn3w9/6738f022-4141-4512-95e1-572992ef7adf'
@@ -151,19 +151,19 @@ export default function AnimatedBlocks() {
           </div>
         <div className='flex flex-col xl:flex-row gap-4 sm:gap-12'>
           <Card
-            title='Kit Glossliciuous Franciny Ehlke'
+            title='Kit Glossliciuous'
             description='R$ 250,00'
             image='/kit.png'
             link='https://nubank.com.br/cobrar/yn3w9/6738f062-ac1a-44ad-b359-97eb2e18e62e'
           />
           <Card
-            title='Vestido de prenda gaúcha'
+            title='Vestido de prenda'
             description='R$ 500,00'
             image='/vestido.png'
             link='https://nubank.com.br/cobrar/yn3w9/6739e4d0-4022-41cc-bb67-cbbef4ba30c8'
           />
           <Card
-            title='Pulseira de Prata Pandora'
+            title='Pulseira de Prata'
             description='R$ 900,00'
             image='/pulseira.png'
             link='https://nubank.com.br/cobrar/yn3w9/6738f0b0-3612-4a38-8d7e-1bd89e47e718'

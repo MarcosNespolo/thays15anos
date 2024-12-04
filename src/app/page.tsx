@@ -82,13 +82,13 @@ export default function AnimatedBlocks() {
         </div>
         <div className={`${oldStandard.variable} font-old-standard text-[#8A7CCB] flex flex-col items-center mt-12 text-[22px] sm:text-[36px]`}>
           <div className='flex flex-row gap-4 sm:gap-8 items-center'>
-            <div className={`border-y-2 pt-2 pb-0.5`}>
+            <div className={`border-y-2 border-[#E7DBFE] pt-2 pb-0.5`}>
               SÁB
             </div>
-            <div className={`text-[46px] sm:text-[82px] pt-3`}>
+            <div className={`drop-shadow text-[46px] sm:text-[82px] pt-3`}>
               11
             </div>
-            <div className={`border-y-2 pt-1 -pb-0.5 text-[24px] sm:text-[40px]`}>
+            <div className={`border-y-2 border-[#E7DBFE] pt-1 -pb-0.5 text-[24px] sm:text-[40px]`}>
               19h
             </div>
           </div>
@@ -96,22 +96,25 @@ export default function AnimatedBlocks() {
             JANEIRO
           </div>
         </div>
-        <div className='flex flex-col gap-2 mt-14 sm:mt-24 text-sm sm:text-base'>
+        <div className='flex flex-col items-center gap-2 mt-14 sm:mt-24 text-sm sm:text-base'>
           <a 
             target='_blank'
             href='https://api.whatsapp.com/send?phone=5541997597912&text=Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20seu%20anivers%C3%A1rio%20de%2015%20anos%21'
-            className='text-center cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 border p-3 rounded-full border-1 border-[#8A7CCB] text-[#736A9B] font-semibold bg-white'>
+            className='flex items-center justify-start px-6 py-3 max-w-[220px] w-[220px] sm:max-w-[240px] sm:w-[240px] cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 border border-[#8A7CCB] rounded-xl bg-[#8A7CCB] text-white font-semibold bg-white'>
+              <img className='mr-5 w-[20px]' src='/wpp.svg'></img>  
                 Confirmar presença
           </a>
           <a 
             onClick={() => handleShowGiftsClick()}
-            className='text-center cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 border p-3 rounded-full border-1 border-[#8A7CCB] text-[#736A9B] font-semibold bg-white'>
-                Presentear
+            className='flex items-center justify-start px-6 py-3 max-w-[220px] w-[220px] sm:max-w-[240px] sm:w-[240px] cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 rounded-xl border border-[#8A7CCB] text-[#8A7CCB] font-semibold bg-white'>
+              <img className='mr-5 w-[20px]' src='/presente.svg'></img>  
+              <p>Presentear</p>
           </a>
           <a 
             target='_blank'
             href='https://www.google.com/maps/place/Av.+Mal.+Floriano+Peixoto,+4845+-+Hauer,+Curitiba+-+PR,+81610-000/@-25.4708667,-49.2547532,17z/data=!3m1!4b1!4m6!3m5!1s0x94dce4dae185505d:0x3c26a75bc53e226f!8m2!3d-25.4708716!4d-49.2521729!16s%2Fg%2F11f3nh9tp7?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D'
-            className='text-center cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 border p-3 rounded-full border-1 border-[#8A7CCB] text-[#736A9B] font-semibold bg-white'>
+            className='flex items-center justify-start px-6 py-3 max-w-[220px] w-[220px] sm:max-w-[240px] sm:w-[240px] cursor-pointer drop-shadow hover:drop-shadow-md hover:brightness-105 active:brightness-95 rounded-xl border border-[#8A7CCB] text-[#8A7CCB] font-semibold bg-white'>
+              <img className='ml-[3px] mr-[22px] w-[16px]' src='/gps.svg'></img>  
                 Como chegar
           </a>
         </div>

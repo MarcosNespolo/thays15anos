@@ -15,7 +15,7 @@ export default function Card({
 }:CardProps){
 
     return (
-        <div className="flex flex-col sm:flex-row rounded-xl drop-shadow-md bg-white p-4 border border-1 border-gray-100 gap-2 sm:gap-[18px] w-[140px] sm:w-[310px]">
+        <div className="flex flex-col sm:flex-row rounded-xl drop-shadow-md bg-white p-4 border border-1 border-gray-100 gap-2 sm:gap-[18px] w-[144px] min-w-[144px] sm:w-[310px]">
             <Image 
                 alt=""
                 className="object-cover w-[60px] h-[60px] mx-auto sm:w-[115px] sm:h-[130px]"
